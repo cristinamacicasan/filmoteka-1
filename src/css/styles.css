@@ -1,0 +1,121 @@
+/* Resetare stiluri implicite */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stilizare bara de navigare */
+#navbar {
+    background-color: goldenrod;
+    /* culoare de fundal */
+    padding: 10px 0;
+    /* spatiere in interiorul barei de navigare */
+}
+
+/* Stilizare lista de navigare */
+#navbar ul {
+    list-style-type: none;
+    /* eliminare marcatori */
+    text-align: center;
+    /* aliniere centrat */
+}
+
+
+/* Stilizare fereastra modala */
+.modal {
+    display: none;
+    /* ascunde fereastra modala implicit */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Stilizare continut fereastra modala */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Stilizare buton inchidere */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Stilizare elemente de navigare */
+#navbar ul li {
+    display: inline;
+    /* afisare pe aceeasi linie */
+}
+
+#navbar ul li a {
+    display: inline-block;
+    /* convertire la bloc pentru a putea seta margini si spatiere */
+    color: white;
+    /* culoare text */
+    text-decoration: none;
+    /* eliminare subliniere */
+    padding: 10px;
+    /* spatiere intre elemente */
+    margin: 0 5px;
+    /* spatiere intre elemente */
+}
+
+#navbar ul li a:hover {
+    background-color: #555;
+    /* culoare de fundal la hover */
+}
+
+
+/* Stiluri pentru containerul galeriei */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Stiluri pentru fiecare element de film */
+.movie {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Stiluri pentru imaginea filmului */
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Stiluri pentru titlul filmului */
+.movie h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+/* Stiluri pentru descrierea filmului */
+.movie p {
+    margin-bottom: 0;
+}

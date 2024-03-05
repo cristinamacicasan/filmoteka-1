@@ -1,14 +1,64 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.0/simplelightbox.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Filmoteka</h1>
+    </header>
+
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#" id="home-link">Acasă</a></li>
+            <li><a href="#" id="movies-link">Filme</a></li>
+            <li><a href="#" id="about-link">Despre</a></li>
+            <li><a href="#" id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Modal de autentificare/inregistrare -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="login-form">
+                <h2>Logare</h2>
+                <form>
+                    <input type="text" placeholder="Utilizator" id="username">
+                    <input type="email" placeholder="Email" id="email">
+                    <input type="password" placeholder="Parolă" id="password">
+                    <button type="submit">Logare</button>
+                </form>
+            </div>
+            <div id="register-form" style="display: none;">
+                <h2>Înregistrare</h2>
+                <form>
+                    <input type="text" placeholder="Utilizator" id="reg-username">
+                    <input type="password" placeholder="Parolă" id="reg-password">
+                    <button type="submit">Înregistrare</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="gallery">
+        <!-- aici afisez filmele -->
+    </div>
+    
+    <script src="app.js"></script>
+
+
+   
+</body>
+
 </html>
